@@ -5,6 +5,10 @@
 /* *********************************** */
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
+* {
+  border-radius: 6px;
+}
+
 html {
   background: var(--Blanco);
 }
@@ -12,11 +16,77 @@ html {
 .container {
   height: 100%;
   font-family: js;
+  font-weight: bolder;
   color: var(--Negro);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
 }
 
+/* ============== HEADER ============== */
 header {
-  margin-top: 14.8%;
+  font-size: var(--h1);
+  font-family: js-it;
+  margin-top: 26%;
+}
+
+/* ============== MAIN ============== */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.instrucciones {
+  margin-top: 14%;
+  background: var(--Rojo);
+  width: 62.32%;
+  font-size: var(--p);
+  padding: 3% 0;
+}
+
+.respiracion {
+  display: none;
+}
+
+.gif {
+  margin-top: 16%;
+
+  min-width: 67.44%;
+  max-width: 67.44%;
+  min-height: 27%;
+  background: #fb7171;
+
+  display: flex;
+  justify-content: center;
+  padding: 8% 0;
+
+  & .pulmon {
+    width: 60%;
+  }
+}
+
+.boton {
+  margin-top: 22.7%;
+
+  font-weight: bold;
+  width: 59.53%;
+  height: 3%;
+  line-height: 50px;
+  border: none;
+  border-radius: 6px;
+  background: #fb7171;
+
+  & p {
+    font-size: 43px;
+  }
 }
 
 /* Tipografía */
@@ -45,6 +115,12 @@ header {
   --Rojo: #fb7171;
   --Azul: #7193fb;
   --Verde: #71fb93;
+
+  /* Font size */
+  --h1: 2em;
+  --h2: 2.6875em;
+  --h4: 2.0625em;
+  --p: 1.25em;
 }
 
 /* ******************************** */

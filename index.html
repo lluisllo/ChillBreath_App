@@ -47,36 +47,52 @@
   <body>
     <div id="container" class="container">
       <!-- Nombre de la app // cuenta antrás -->
-      <header>
+      <header id="header">
         <h1>Chill Breath</h1>
       </header>
 
       <!-- Instrucciones, GIF y botones -->
       <main>
         <!-- Instrucciones iniciales -->
-        <p class="instrucciones">
+        <p class="instrucciones" id="instrucciones">
           Inhala, mantén y exhala siguiendo el ritmo indicado durante 5 minutos.
           Pulsa Start para empezar
         </p>
 
         <!-- Respiración -->
-        <div class="respiracion">
+        <div class="respiracion" id="respiracion">
           <h2 class="inhalar">Inhala</h2>
           <h2 class="mantener">Mantén</h2>
           <h2 class="exhalar">Exhala</h2>
         </div>
 
-        <!-- Img -->
-        <picture>
-          <img src="svg/pulmon.svg" alt="pulmon" />
-        </picture>
+        <!-- Img pulmón-->
+        <div class="gif" id="gif">
+          <svg
+            class="pulmon"
+            id="pulmon"
+            viewBox="0 0 162 149"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M65.0811 30.6122L66.3192 46.5568C66.4081 47.7025 67.6932 48.333 68.6538 47.7023C69.824 46.9302 70.7834 45.8844 71.4469 44.6577C72.1104 43.431 72.4574 42.0613 72.4572 40.6702V7.45365C72.4572 5.21203 73.3577 3.06222 74.9606 1.47716C76.5634 -0.107906 78.7332 0.00161743 81 0.00161743C83.2668 0.00161743 85.445 -0.107906 87.0479 1.47716C88.6507 3.06222 89.5512 5.21203 89.5512 7.45365V40.6702C89.551 42.0613 89.898 43.431 90.5615 44.6577C91.225 45.8844 92.1844 46.9302 93.3546 47.7023C94.3152 48.333 95.6003 47.7025 95.6893 46.5568L96.9273 30.6122C97.9615 17.3087 113.44 10.3781 124.226 18.3821L129.226 22.0841C141.741 31.3685 150.08 45.131 152.457 60.4226L161.688 119.747C164.748 139.415 144.748 154.747 126.243 146.912L117.226 143.084C109.026 139.607 102.132 133.68 97.511 126.133C92.8896 118.586 90.7728 109.798 91.4572 101.001L93.5765 73.7209C93.8299 70.459 92.2932 67.3165 89.5631 65.5136L83.876 61.758C82.1533 60.6221 79.8632 60.6345 78.1324 61.758L72.4454 65.5136C69.7152 67.3165 68.1785 70.459 68.4319 73.7209L70.5512 101.001C71.2375 109.799 69.1215 118.589 64.5 126.138C59.8786 133.686 52.9835 139.615 44.782 143.092L35.7564 146.912C17.2607 154.747 -2.74785 139.415 0.311975 119.747L9.54274 60.4226C11.9217 45.1297 20.2641 31.3669 32.782 22.0841L37.7735 18.3821C48.5683 10.3781 64.047 17.3087 65.0811 30.6122Z"
+              fill="#1F1F1F"
+            />
+          </svg>
+        </div>
 
-        <button class="boton">Start</button>
+        <button class="boton" id="boton">
+          <p>Start</p>
+        </button>
+
         <!--  -->
       </main>
 
       <!--  -->
       <footer></footer>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
