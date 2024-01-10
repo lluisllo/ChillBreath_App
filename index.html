@@ -40,24 +40,43 @@
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
+
     <!-- <script src="preloader.js"></script> -->
   </head>
-  
+
   <body>
     <div id="container" class="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header></header>
+      <!-- Nombre de la app // cuenta antrás -->
+      <header>
+        <h1>Chill Breath</h1>
+      </header>
 
-      <!-- Main (centro de la página, zona central) -->
+      <!-- Instrucciones, GIF y botones -->
       <main>
-        <!-- section y article (posibilidades dentro de main) -->
+        <!-- Instrucciones iniciales -->
+        <p class="instrucciones">
+          Inhala, mantén y exhala siguiendo el ritmo indicado durante 5 minutos.
+          Pulsa Start para empezar
+        </p>
+
+        <!-- Respiración -->
+        <div class="respiracion">
+          <h2 class="inhalar">Inhala</h2>
+          <h2 class="mantener">Mantén</h2>
+          <h2 class="exhalar">Exhala</h2>
+        </div>
+
+        <!-- Img -->
+        <picture>
+          <img src="svg/pulmon.svg" alt="pulmon" />
+        </picture>
+
+        <button class="boton">Start</button>
+        <!--  -->
       </main>
 
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <!-- <h6>&copy;Copyright</h6> -->
-      </footer>
+      <!--  -->
+      <footer></footer>
     </div>
   </body>
 </html>
