@@ -13,6 +13,12 @@ html {
   background: var(--Blanco);
 }
 
+body {
+  height: 932px;
+  width: 430px;
+  margin: auto;
+}
+
 .container {
   height: 100%;
   font-family: js;
