@@ -9,15 +9,20 @@
   border-radius: 6px;
 }
 
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  html {
+    height: 932px;
+    width: 430px;
+  }
+}
+
 html {
   background: var(--Blanco);
 }
 
-body {
-}
-
 .container {
-  height: 100%;
+  width: 100%;
   font-family: js;
   font-weight: bolder;
   color: var(--Negro);
@@ -37,6 +42,10 @@ header {
   margin-top: 26%;
 }
 
+.countdown {
+  font-size: var(--h4);
+}
+
 /* ============== MAIN ============== */
 main {
   display: flex;
@@ -49,7 +58,6 @@ main {
 
 .instrucciones {
   margin-top: 14%;
-  background: var(--Rojo);
   width: 62.32%;
   font-size: var(--p);
   padding: 3% 0;
@@ -57,39 +65,85 @@ main {
 
 .respiracion {
   display: none;
+  font-weight: bold;
+  margin-top: 14%;
+  width: 62.32%;
+  font-size: var(--p);
+  padding: 3% 0;
+}
+
+@media only screen and (min-width: 768px) {
 }
 
 .gif {
   margin-top: 16%;
-
-  min-width: 67.44%;
-  max-width: 67.44%;
+  width: 87%;
   min-height: 27%;
-  background: #fb7171;
 
   display: flex;
   justify-content: center;
   padding: 8% 0;
+}
 
-  & .pulmon {
-    width: 60%;
-  }
+/* Animación pulmón */
+.pulmon {
+  width: 60%;
 }
 
 .boton {
   margin-top: 22.7%;
-
   font-weight: bold;
   width: 59.53%;
   height: 3%;
   line-height: 50px;
   border: none;
   border-radius: 6px;
-  background: #fb7171;
 
   & p {
     font-size: 43px;
   }
+}
+
+.boton:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+/* Animación de cambio de color */
+.instrucciones,
+.respiracion,
+.gif,
+.boton {
+  background-color: #ccc;
+  transition: background-color 0.6s ease-in;
+}
+
+.instrucciones.blue,
+.respiracion.blue,
+.gif.blue,
+.boton.blue {
+  background-color: #7193fb;
+}
+
+.instrucciones.green,
+.respiracion.green,
+.gif.green,
+.boton.green {
+  background-color: #71fb93;
+}
+
+.instrucciones.red,
+.respiracion.red,
+.gif.red,
+.boton.red {
+  background-color: #fb7171;
+}
+
+.instrucciones.red2,
+.respiracion.red2,
+.gif.red2,
+.boton.red2 {
+  background-color: #fb7171;
 }
 
 /* Tipografía */

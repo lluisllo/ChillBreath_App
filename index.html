@@ -51,6 +51,8 @@
         <h1>Chill Breath</h1>
       </header>
 
+      <div id="countdown" class="countdown"></div>
+
       <!-- Instrucciones, GIF y botones -->
       <main>
         <!-- Instrucciones iniciales -->
@@ -61,9 +63,9 @@
 
         <!-- Respiración -->
         <div class="respiracion" id="respiracion">
-          <h2 class="inhalar">Inhala</h2>
-          <h2 class="mantener">Mantén</h2>
-          <h2 class="exhalar">Exhala</h2>
+          <h2 class="inhalar" id="inhalar">Inhala</h2>
+          <h2 class="mantener" id="manteNER">Mantén</h2>
+          <h2 class="exhalar" id="exhalar">Exhala</h2>
         </div>
 
         <!-- Img pulmón-->
@@ -82,15 +84,12 @@
           </svg>
         </div>
 
-        <button class="boton" id="boton">
+        <button class="boton" onclick="changeColor()" id="startButton">
           <p>Start</p>
         </button>
 
         <!--  -->
       </main>
-
-      <!--  -->
-      <footer></footer>
     </div>
 
     <script src="js/script.js"></script>
